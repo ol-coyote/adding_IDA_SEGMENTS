@@ -1,0 +1,10 @@
+Adjust the location of the stackdumptxt.log in the create_stack_seg.py file
+Open crossfire in idapro
+Accept all defaults and allow ida to process the entire binary
+Save the i64 for reverting
+Click on "File" -> "Script File..." 
+Point to "create_stack_seg.py" -> "Open"
+Verify Segment was created at the end of the binary:
+	IDA should jump to the end of the binary if not, click on "View" -> "Open subviews" -> "segments"
+	seg23 is created on the test bed
+	Click on "Hex View 1" tab, and verify bytes were patched to the hex portion
